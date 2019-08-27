@@ -7,20 +7,27 @@
 //
 
 import UIKit
-
-typealias CCPAlertPluginCallback = () -> ()
+import CCPSystemSkip
 
 protocol CCPAlertPlugin {
     func alert(_ target: CCPAuthorization)
     func title(_ target: CCPAuthorization) -> String
     func message(_ target: CCPAuthorization) -> String
+    func cancelAction(_ target: CCPAuthorization)
+    func sureAction(_ target: CCPAuthorization)
     var cancelTitle: String { get }
     var confirmTitle: String { get }
-    var cancelCallback: CCPAlertPluginCallback? { get }
-    var sureCallback: CCPAlertPluginCallback? { get }
 }
 
 extension CCPAlertPlugin {
+    
+    func cancelAction(_ target: CCPAuthorization) {
+        
+    }
+    
+    func sureAction(_ target: CCPAuthorization) {
+        SystemSkip.setting.skip()
+    }
     
     func title(_ target: CCPAuthorization) -> String {
         switch target {
@@ -64,6 +71,8 @@ extension CCPAlertPlugin {
         }
     }
     
+    
+    
     var cancelTitle: String {
         return NSLocalizedString("CCPAlertPluginCancel", tableName: "CCPAuthorization", comment: "")
     }
@@ -72,21 +81,13 @@ extension CCPAlertPlugin {
         return NSLocalizedString("CCPAlertPluginConfirm", tableName: "CCPAuthorization", comment: "")
     }
     
-    var cancelCallback: CCPAlertPluginCallback? {
-        return nil
-    }
-    
-    var sureCallback: CCPAlertPluginCallback? {
-        return nil
-    }
-    
     func alert(_ target: CCPAuthorization) {
         let alert = UIAlertController.init(title: title(target), message: message(target), preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: cancelTitle, style: .default) { (_) in
-            self.cancelCallback?()
+            self.cancelAction(target)
         }
         let confirmAction = UIAlertAction(title: confirmTitle, style: .default) { (_) in
-            self.sureCallback?()
+            self.sureAction(target)
         }
         alert.addAction(cancelAction)
         alert.addAction(confirmAction)

@@ -1,0 +1,6 @@
+framework module CCPSystemSkip {
+  umbrella header "CCPSystemSkip-umbrella.h"
+
+  export *
+  module * { export * }
+}

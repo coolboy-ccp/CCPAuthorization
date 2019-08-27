@@ -25,6 +25,7 @@
 		7EA2A5422313B59B00AE9371 /* ReminderAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2A5412313B59B00AE9371 /* ReminderAuthorization.swift */; };
 		7EA2A5462313C6DD00AE9371 /* FaceIDAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2A5452313C6DD00AE9371 /* FaceIDAuthorization.swift */; };
 		7EA2A54A2313E55900AE9371 /* NotificationAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2A5492313E55900AE9371 /* NotificationAuthorization.swift */; };
+		FF0A2081FCA35E058DA3FA5B /* Pods_CCPAuthorization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B487F508A4BFE743C1A8DAA /* Pods_CCPAuthorization.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,9 @@
 		7EA2A5412313B59B00AE9371 /* ReminderAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderAuthorization.swift; sourceTree = "<group>"; };
 		7EA2A5452313C6DD00AE9371 /* FaceIDAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuthorization.swift; sourceTree = "<group>"; };
 		7EA2A5492313E55900AE9371 /* NotificationAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAuthorization.swift; sourceTree = "<group>"; };
+		9B487F508A4BFE743C1A8DAA /* Pods_CCPAuthorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCPAuthorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47C3870D3D9151C3D44DABE /* Pods-CCPAuthorization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPAuthorization.release.xcconfig"; path = "Target Support Files/Pods-CCPAuthorization/Pods-CCPAuthorization.release.xcconfig"; sourceTree = "<group>"; };
+		E7D91D4E7DF81C631431CAD2 /* Pods-CCPAuthorization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPAuthorization.debug.xcconfig"; path = "Target Support Files/Pods-CCPAuthorization/Pods-CCPAuthorization.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0A2081FCA35E058DA3FA5B /* Pods_CCPAuthorization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 			children = (
 				7E4C80A5230E7FAE002479AE /* CCPAuthorization */,
 				7E4C80A4230E7FAE002479AE /* Products */,
+				7E6291847FEC39B158B115BD /* Pods */,
+				EAC2A45D42D41E53772AED64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,15 @@
 			path = CCPAuthorization;
 			sourceTree = "<group>";
 		};
+		7E6291847FEC39B158B115BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7D91D4E7DF81C631431CAD2 /* Pods-CCPAuthorization.debug.xcconfig */,
+				E47C3870D3D9151C3D44DABE /* Pods-CCPAuthorization.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7E6F0C772314C7DB00D81340 /* Authorizations */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,14 @@
 			path = Authorizations;
 			sourceTree = "<group>";
 		};
+		EAC2A45D42D41E53772AED64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B487F508A4BFE743C1A8DAA /* Pods_CCPAuthorization.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E4C80B5230E7FAF002479AE /* Build configuration list for PBXNativeTarget "CCPAuthorization" */;
 			buildPhases = (
+				366CBCF8E7C6750504004402 /* [CP] Check Pods Manifest.lock */,
 				7E4C809F230E7FAE002479AE /* Sources */,
 				7E4C80A0230E7FAE002479AE /* Frameworks */,
 				7E4C80A1230E7FAE002479AE /* Resources */,
+				09843C65084F71A42CF8F07F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +207,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09843C65084F71A42CF8F07F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCPAuthorization/Pods-CCPAuthorization-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CCPSystemSkip/CCPSystemSkip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCPSystemSkip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCPAuthorization/Pods-CCPAuthorization-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		366CBCF8E7C6750504004402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCPAuthorization-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E4C809F230E7FAE002479AE /* Sources */ = {
@@ -357,6 +430,7 @@
 		};
 		7E4C80B6230E7FAF002479AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D91D4E7DF81C631431CAD2 /* Pods-CCPAuthorization.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +449,7 @@
 		};
 		7E4C80B7230E7FAF002479AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47C3870D3D9151C3D44DABE /* Pods-CCPAuthorization.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

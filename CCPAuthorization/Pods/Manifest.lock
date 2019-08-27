@@ -1,0 +1,16 @@
+PODS:
+  - CCPSystemSkip (1.0.2)
+
+DEPENDENCIES:
+  - CCPSystemSkip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CCPSystemSkip
+
+SPEC CHECKSUMS:
+  CCPSystemSkip: ffbf5b6e10c18ddf12f9249b7fe9e917256d54bb
+
+PODFILE CHECKSUM: 1c195592e137d08d0b5db5bda832571c62a9a972
+
+COCOAPODS: 1.6.1

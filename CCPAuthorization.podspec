@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CCPAuthorization"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "iOS系统常用的权限申请"
 
   # This description is used to generate tags and improve search results.
@@ -136,6 +136,5 @@ spec.source_files  = "CCPAuthorization/CCPAuthorization/Authorizations/*"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-
+    spec.dependency "CCPSystemSkip"
 end
