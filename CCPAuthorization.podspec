@@ -94,7 +94,7 @@ iOS系统常用的权限申请，支持iOS10.0+，使用swift5.0
   #  Not including the public_header_files will make all headers public.
   #
 
-spec.source_files  = "CCPAuthorization/CCPAuthorization/Authorizations/*"
+spec.source_files  = "CCPAuthorization/CCPAuthorization/Authorizations/*.swift"
 #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
