@@ -1,0 +1,27 @@
+/* 
+  CCPAuthorization.strings
+  CCPAuthorization
+
+  Created by clobotics_ccp on 2019/8/26.
+  Copyright © 2019 cool-ccp. All rights reserved.
+*/
+
+"CCPAlertPluginCancel" = "cancel";
+"CCPAlertPluginConfirm" = "setting";
+
+"CCPAlertPluginCameraTitle" = "No camera permission";
+"CCPAlertPluginAlbumTitle" = "No album permission";
+"CCPAlertPluginContactTitle" = "No contact permission";
+"CCPAlertPluginLocationTitle" = "No location permission";
+"CCPAlertPluginCalendarTitle" = "No calendar permission";
+"CCPAlertPluginReminderTitle" = "No reminder permission";
+"CCPAlertPluginFaceIDTitle" = "No faceID permission";
+
+
+"CCPAlertPluginAlbumMessage" = "We need your album permission. Please authorize the use.";
+"CCPAlertPluginCameraMessage" = "We need your camera permission. Please authorize the use.";
+"CCPAlertPluginContactMessage" = "We need your contact permission. Please authorize the use.";
+"CCPAlertPluginLocationMessage" = "We need your location permission. Please authorize the use.";
+"CCPAlertPluginCalendarMessage" = "We need your calendar permission. Please authorize the use.";
+"CCPAlertPluginReminderMessage" = "We need your calendar permission. Please authorize the use.";
+"CCPAlertPluginFaceIDMessage" = "We need your faceID permission. Please authorize the use.";

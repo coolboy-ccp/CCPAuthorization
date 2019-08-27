@@ -1,0 +1,25 @@
+/* 
+  CCPAuthorization.strings
+  CCPAuthorization
+
+  Created by clobotics_ccp on 2019/8/26.
+  Copyright © 2019 cool-ccp. All rights reserved.
+*/
+"CCPAlertPluginCancel" = "取消";
+"CCPAlertPluginConfirm" = "去设置";
+
+"CCPAlertPluginCameraTitle" = "没有相机权限";
+"CCPAlertPluginAlbumTitle" = "没有相册权限";
+"CCPAlertPluginContactTitle" = "没有联系人权限";
+"CCPAlertPluginLocationTitle" = "没有定位权限";
+"CCPAlertPluginCalendarTitle" = "没有日历权限";
+"CCPAlertPluginReminderTitle" = "没有提醒权限";
+"CCPAlertPluginFaceIDTitle" = "没有FaceID权限";
+
+"CCPAlertPluginAlbumMessage" = "我们需要使用您的相册，请授权我们使用";
+"CCPAlertPluginCameraMessage" = "我们需要使用您的相机，请授权我们使用";
+"CCPAlertPluginContactMessage" = "我们需要使用您的联系人，请授权我们使用";
+"CCPAlertPluginLocationMessage" = "我们需要使用您的定位，请授权我们使用";
+"CCPAlertPluginCalendarMessage" = "我们需要使用您的日历，请授权我们使用";
+"CCPAlertPluginReminderMessage" = "我们需要使用您的提醒，请授权我们使用";
+"CCPAlertPluginFaceIDMessage" = "我们需要使用您的FaceID，请授权我们使用";
