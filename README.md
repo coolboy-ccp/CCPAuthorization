@@ -1,6 +1,7 @@
 
-|  platform | version | language |
-|    iOS      |   10.0+  | swift 5.0  |
+platform | version | language 
+- | - | -
+iOS|10.0+| swift 5.0
 
 # CCPAuthorization
 iOS常用权限的申请
