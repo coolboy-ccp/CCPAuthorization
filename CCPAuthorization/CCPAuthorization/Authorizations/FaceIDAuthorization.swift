@@ -19,7 +19,6 @@ class FaceIDAuthorization: NSObject {
         if ctx.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             //唤起faceID, 如果是第一次，则会弹出提示框
             ctx.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "test") { (granted, error) in
-                print(error?.localizedDescription)
                 if granted {
                     callback?(.authorized)
                     return
