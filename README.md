@@ -1,9 +1,5 @@
 
-platform | version | language 
-- | - | -
-iOS|10.0+| swift 5.0
-
-# CCPAuthorization
+# CCPAuthorization(iOS10.0+, swift 5.0)
 iOS常用权限的申请
 ## How to use
 1. pod 'CCPAuthorization'
