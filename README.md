@@ -1,5 +1,6 @@
 
 # CCPAuthorization(iOS10.0+, swift 5.0, v 1.0.1)
+# for demo
 iOS常用权限的申请
 ## How to use
 1. pod 'CCPAuthorization'
